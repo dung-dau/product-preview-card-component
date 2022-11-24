@@ -1,89 +1,106 @@
+.ff-montserrat {
+  font-family: var(--ff-montserrat);
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+
+.fs-800 {
+  font-size: var(--fs-800);
+}
+
+.fs-700 {
+  font-size: var(--fs-700);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.text-black {
+  color: var(--clr-black);
+}
+
+.text-gray {
+  color: var(--clr-gray);
+}
+
+.text-dark-cyan {
+  color: var(--clr-dark-cyan);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 0.3rem;
+}
+
+.line-height-1 {
+  line-height: 2rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: 1.5rem;
+}
+
 .product-preview-container {
-  background-color: var(--primary-cream);
-  overflow: scroll;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  max-width: 34rem;
+  margin: auto;
+  padding: 1rem;
+  overflow: hidden;
 }
 
 .product-preview-text {
-  display: block;
+  height: 100%;
+  border-radius: 10px;
   background-color: white;
 }
 
-.product-preview-text {
-  color: gray;
-  padding: 5%;
+#product-preview-img {
+  border-radius: 10px 10px 0 0;
 }
 
-.product-preview-text h1 {
-  color: black;
-  font-size: 262%;
+.product-preview-text-content {
+  padding: 1rem;
 }
 
-#perfume {
-  font-family: 'Montserrat';
-  font-size: 100%;
-}
-
-.product-preview-current-price {
-  font-size: 243%;
-  color: var(--primary-dark-cyan);
-  margin-right: 7%;
+.block-display {
+  display: block;
 }
 
 .primary-button {
-  margin-top: 7%;
   width: 100%;
-  height: 10%;
-  background: var(--primary-dark-cyan);
+  height: 50px;
+  background: var(--clr-dark-cyan);
   box-shadow: none;
   color: white;
   border: none;
   border-radius: 10px;
 }
 
-@media screen and (min-width: 365px) {
-  .product-preview-container {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-  }
-
-  .product-preview-content-container {
-    width: 90%;
-    height: 92%;
-  }
-
-  #product-preview-img {
-    display: block;
-    margin: 0 auto 0 auto;
-    border-radius: 10px 10px 0 0;
-    height: 38%;
-    width: 100%;
-  }
-
-  .product-preview-text {
-    margin: 0 auto;
-    height: 62%;
-  }
+.product-preview-current-price {
+  margin-right: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .product-preview-content-container {
-    display: flex;
-    flex-direction: row;
-    width: 30%;
-    height: 50%;
-  }
-
-  #product-preview-img {
-    height: 100%;
-    border-radius: 10px 0 0 10px;
-  }
-
-  .product-preview-text {
-    height: 100%;
-    border-radius: 0 10px 10px 0;
-  }
+@media screen and (min-width: 24rem) {
 }
